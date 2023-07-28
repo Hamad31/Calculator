@@ -1,0 +1,48 @@
+// CALCULATOR.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+
+using namespace std;
+
+int main(void)
+{
+	char operaiton;
+	float first_number, second_number;
+	cout << "first number: ";
+	cin >> first_number;
+	cout << "second Number: ";
+	cin >> second_number;
+	cout << "Enter Operaiton you Want?(+, -, *, /): ";
+	cin >> operaiton;
+
+	switch (operaiton)
+	{
+	case '+':
+		cout << first_number << " + " << second_number << " = " << first_number + second_number << endl;
+		break;
+	case '-':
+		cout << first_number << "-" << second_number << "=" << first_number - second_number << endl;
+		break;
+	case '*':
+		cout << first_number << "*" << second_number << " = " << first_number * second_number << endl;
+		break;
+	case'/':
+		cout << first_number << "/" << second_number << " = " << first_number / second_number << endl;
+		break;
+	default:
+		cout << "invalid operator..  " << endl;
+		break;
+
+
+	}
+	return 0;
+}
+
+
+
+
+
+  
+
+
